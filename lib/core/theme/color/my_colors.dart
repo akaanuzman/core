@@ -13,8 +13,8 @@ class MyColors {
 
   MyColors.init();
 
-  /// Flutter Colors
-  /// White
+  /// Flutter Colors [You can use all flutter colors basicly].
+  // White
   Color get white => Colors.white;
   Color get white10 => Colors.white10;
   Color get white12 => Colors.white12;
@@ -168,7 +168,333 @@ class MyColors {
   Color get greenAccent4 => Colors.greenAccent.shade400;
   Color get greenAccent7 => Colors.greenAccent.shade700;
 
+  // Grey
+  Color get grey => Colors.grey;
+  Color get grey05 => Colors.grey.shade50;
+  Color get grey1 => Colors.grey.shade100;
+  Color get grey2 => Colors.grey.shade200;
   Color get grey3 => Colors.grey.shade300;
+  Color get grey4 => Colors.grey.shade400;
+  Color get grey5 => Colors.grey.shade500;
+  Color get grey6 => Colors.grey.shade600;
+  Color get grey7 => Colors.grey.shade700;
+  Color get grey8 => Colors.grey.shade800;
+  Color get grey9 => Colors.grey.shade900;
+
+  // Indigo && Indigo Accent
+  Color get indigo => Colors.indigo;
+  Color get indigo05 => Colors.indigo.shade50;
+  Color get indigo1 => Colors.indigo.shade100;
+  Color get indigo2 => Colors.indigo.shade200;
+  Color get indigo3 => Colors.indigo.shade300;
+  Color get indigo4 => Colors.indigo.shade400;
+  Color get indigo5 => Colors.indigo.shade500;
+  Color get indigo6 => Colors.indigo.shade600;
+  Color get indigo7 => Colors.indigo.shade700;
+  Color get indigo8 => Colors.indigo.shade800;
+  Color get indigo9 => Colors.indigo.shade900;
+  Color get indigoAccent => Colors.indigoAccent;
+  Color get indigoAccent1 => Colors.indigoAccent.shade100;
+  Color get indigoAccent2 => Colors.indigoAccent.shade200;
+  Color get indigoAccent4 => Colors.indigoAccent.shade400;
+  Color get indigoAccent7 => Colors.indigoAccent.shade700;
+
+  // Light Blue & Light Blue Accent
+  Color get lightBlue => Colors.lightBlue;
+  Color get lightBlue05 => Colors.lightBlue.shade50;
+  Color get lightBlue1 => Colors.lightBlue.shade100;
+  Color get lightBlue2 => Colors.lightBlue.shade200;
+  Color get lightBlue3 => Colors.lightBlue.shade300;
+  Color get lightBlue4 => Colors.lightBlue.shade400;
+  Color get lightBlue5 => Colors.lightBlue.shade500;
+  Color get lightBlue6 => Colors.lightBlue.shade600;
+  Color get lightBlue7 => Colors.lightBlue.shade700;
+  Color get lightBlue8 => Colors.lightBlue.shade800;
+  Color get lightBlue9 => Colors.lightBlue.shade900;
+  Color get lightBlueAccent => Colors.lightBlueAccent;
+  Color get lightBlueAccent1 => Colors.lightBlueAccent.shade100;
+  Color get lightBlueAccent2 => Colors.lightBlueAccent.shade200;
+  Color get lightBlueAccent4 => Colors.lightBlueAccent.shade400;
+  Color get lightBlueAccent7 => Colors.lightBlueAccent.shade700;
+
+  // List Green & Light Green Accent
+  Color get lightGreen => Colors.lightGreen;
+  Color get lightGreen05 => Colors.lightGreen.shade50;
+  Color get lightGreen1 => Colors.lightGreen.shade100;
+  Color get lightGreen2 => Colors.lightGreen.shade200;
+  Color get lightGreen3 => Colors.lightGreen.shade300;
+  Color get lightGreen4 => Colors.lightGreen.shade400;
+  Color get lightGreen5 => Colors.lightGreen.shade500;
+  Color get lightGreen6 => Colors.lightGreen.shade600;
+  Color get lightGreen7 => Colors.lightGreen.shade700;
+  Color get lightGreen8 => Colors.lightGreen.shade800;
+  Color get lightGreen9 => Colors.lightGreen.shade900;
+  Color get lightGreenAccent => Colors.lightGreenAccent;
+  Color get lightGreenAccent1 => Colors.lightGreenAccent.shade100;
+  Color get lightGreenAccent2 => Colors.lightGreenAccent.shade200;
+  Color get lightGreenAccent4 => Colors.lightGreenAccent.shade400;
+  Color get lightGreenAccent7 => Colors.lightGreenAccent.shade700;
+
+  // Lime & Lime Accent
+  Color get lime => Colors.lime;
+  Color get lime05 => Colors.lime.shade50;
+  Color get lime1 => Colors.lime.shade100;
+  Color get lime2 => Colors.lime.shade200;
+  Color get lime3 => Colors.lime.shade300;
+  Color get lime4 => Colors.lime.shade400;
+  Color get lime5 => Colors.lime.shade500;
+  Color get lime6 => Colors.lime.shade600;
+  Color get lime7 => Colors.lime.shade700;
+  Color get lime8 => Colors.lime.shade800;
+  Color get lime9 => Colors.lime.shade900;
+  Color get limeAccent => Colors.limeAccent;
+  Color get limeAccent1 => Colors.limeAccent.shade100;
+  Color get limeAccent2 => Colors.limeAccent.shade200;
+  Color get limeAccent4 => Colors.limeAccent.shade400;
+  Color get limeAccent7 => Colors.limeAccent.shade700;
+
+  // Orange && Orange Accent
+  Color get orange => Colors.orange;
+  Color get orange05 => Colors.orange.shade50;
+  Color get orange1 => Colors.orange.shade100;
+  Color get orange2 => Colors.orange.shade200;
+  Color get orange3 => Colors.orange.shade300;
+  Color get orange4 => Colors.orange.shade400;
+  Color get orange5 => Colors.orange.shade500;
+  Color get orange6 => Colors.orange.shade600;
+  Color get orange7 => Colors.orange.shade700;
+  Color get orange8 => Colors.orange.shade800;
+  Color get orange9 => Colors.orange.shade900;
+  Color get orangeAccent => Colors.orangeAccent;
+  Color get orangeAccent1 => Colors.orangeAccent.shade100;
+  Color get orangeAccent2 => Colors.orangeAccent.shade200;
+  Color get orangeAccent4 => Colors.orangeAccent.shade400;
+  Color get orangeAccent7 => Colors.orangeAccent.shade700;
+
+  // Pink && Pink Accent
+  Color get pink => Colors.pink;
+  Color get pink05 => Colors.pink.shade50;
+  Color get pink1 => Colors.pink.shade100;
+  Color get pink2 => Colors.pink.shade200;
+  Color get pink3 => Colors.pink.shade300;
+  Color get pink4 => Colors.pink.shade400;
+  Color get pink5 => Colors.pink.shade500;
+  Color get pink6 => Colors.pink.shade600;
+  Color get pink7 => Colors.pink.shade700;
+  Color get pink8 => Colors.pink.shade800;
+  Color get pink9 => Colors.pink.shade900;
+  Color get pinkAccent => Colors.pinkAccent;
+  Color get pinkAccent1 => Colors.pinkAccent.shade100;
+  Color get pinkAccent2 => Colors.pinkAccent.shade200;
+  Color get pinkAccent4 => Colors.pinkAccent.shade400;
+  Color get pinkAccent7 => Colors.pinkAccent.shade700;
+
+  // Purple && Purple Accent
+  Color get purple => Colors.purple;
+  Color get purple05 => Colors.purple.shade50;
+  Color get purple1 => Colors.purple.shade100;
+  Color get purple2 => Colors.purple.shade200;
+  Color get purple3 => Colors.purple.shade300;
+  Color get purple4 => Colors.purple.shade400;
+  Color get purple5 => Colors.purple.shade500;
+  Color get purple6 => Colors.purple.shade600;
+  Color get purple7 => Colors.purple.shade700;
+  Color get purple8 => Colors.purple.shade800;
+  Color get purple9 => Colors.purple.shade900;
+  Color get purpleAccent => Colors.purpleAccent;
+  Color get purpleAccent1 => Colors.purpleAccent.shade100;
+  Color get purpleAccent2 => Colors.purpleAccent.shade200;
+  Color get purpleAccent4 => Colors.purpleAccent.shade400;
+  Color get purpleAccent7 => Colors.purpleAccent.shade700;
+
+  // Red && Red Accent
   Color get red => Colors.red;
+  Color get red05 => Colors.red.shade50;
+  Color get red1 => Colors.red.shade100;
+  Color get red2 => Colors.red.shade200;
+  Color get red3 => Colors.red.shade300;
+  Color get red4 => Colors.red.shade400;
+  Color get red5 => Colors.red.shade500;
+  Color get red6 => Colors.red.shade600;
+  Color get red7 => Colors.red.shade700;
+  Color get red8 => Colors.red.shade800;
+  Color get red9 => Colors.red.shade900;
+  Color get redAccent => Colors.redAccent;
+  Color get redAccent1 => Colors.redAccent.shade100;
+  Color get redAccent2 => Colors.redAccent.shade200;
+  Color get redAccent4 => Colors.redAccent.shade400;
+  Color get redAccent7 => Colors.redAccent.shade700;
+
+  // Teal && Teal Accent
+  Color get teal => Colors.teal;
+  Color get teal05 => Colors.teal.shade50;
+  Color get teal1 => Colors.teal.shade100;
+  Color get teal2 => Colors.teal.shade200;
+  Color get teal3 => Colors.teal.shade300;
+  Color get teal4 => Colors.teal.shade400;
+  Color get teal5 => Colors.teal.shade500;
+  Color get teal6 => Colors.teal.shade600;
+  Color get teal7 => Colors.teal.shade700;
+  Color get teal8 => Colors.teal.shade800;
+  Color get teal9 => Colors.teal.shade900;
+  Color get tealAccent => Colors.tealAccent;
+  Color get tealAccent1 => Colors.tealAccent.shade100;
+  Color get tealAccent2 => Colors.tealAccent.shade200;
+  Color get tealAccent4 => Colors.tealAccent.shade400;
+  Color get tealAccent7 => Colors.tealAccent.shade700;
+
+  // Yellow && Yellow Accent
+  Color get yellow => Colors.yellow;
+  Color get yellow05 => Colors.yellow.shade50;
+  Color get yellow1 => Colors.yellow.shade100;
+  Color get yellow2 => Colors.yellow.shade200;
+  Color get yellow3 => Colors.yellow.shade300;
+  Color get yellow4 => Colors.yellow.shade400;
+  Color get yellow5 => Colors.yellow.shade500;
+  Color get yellow6 => Colors.yellow.shade600;
+  Color get yellow7 => Colors.yellow.shade700;
+  Color get yellow8 => Colors.yellow.shade800;
+  Color get yellow9 => Colors.yellow.shade900;
+  Color get yellowAccent => Colors.yellowAccent;
+  Color get yellowAccent1 => Colors.yellowAccent.shade100;
+  Color get yellowAccent2 => Colors.yellowAccent.shade200;
+  Color get yellowAccent4 => Colors.yellowAccent.shade400;
+  Color get yellowAccent7 => Colors.yellowAccent.shade700;
+
+  // Transparent
   Color get transparent => Colors.transparent;
+}
+
+/// Apple Colors
+/// [You can use Apple Human Interface Guidelines Colors]
+/// For detailed information: https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/
+class AppleColors {
+  final BuildContext context;
+  bool get isDarkMode => Theme.of(context).brightness == Brightness.dark;
+
+  AppleColors(this.context);
+
+  Color get red => isDarkMode
+      ? const Color.fromARGB(255, 255, 69, 58)
+      : const Color.fromARGB(255, 255, 59, 48);
+
+  Color get orange => isDarkMode
+      ? const Color.fromARGB(255, 255, 159, 10)
+      : const Color.fromARGB(255, 255, 149, 0);
+
+  Color get yellow => isDarkMode
+      ? const Color.fromARGB(255, 255, 214, 10)
+      : const Color.fromARGB(255, 255, 204, 0);
+
+  Color get green => isDarkMode
+      ? const Color.fromARGB(255, 48, 209, 88)
+      : const Color.fromARGB(255, 52, 199, 89);
+
+  Color get teal => isDarkMode
+      ? const Color.fromARGB(255, 100, 210, 255)
+      : const Color.fromARGB(255, 90, 200, 250);
+
+  Color get blue => isDarkMode
+      ? const Color.fromARGB(255, 10, 132, 255)
+      : const Color.fromARGB(255, 0, 122, 255);
+
+  Color get indigo => isDarkMode
+      ? const Color.fromARGB(255, 94, 92, 230)
+      : const Color.fromARGB(255, 88, 86, 214);
+
+  Color get purple => isDarkMode
+      ? const Color.fromARGB(255, 191, 90, 242)
+      : const Color.fromARGB(255, 175, 82, 222);
+
+  Color get pink => isDarkMode
+      ? const Color.fromARGB(255, 255, 55, 95)
+      : const Color.fromARGB(255, 255, 45, 85);
+
+  Color get grey => isDarkMode
+      ? const Color.fromARGB(255, 142, 142, 147)
+      : const Color.fromARGB(255, 142, 142, 147);
+
+  Color get grey2 => isDarkMode
+      ? const Color.fromARGB(255, 99, 99, 102)
+      : const Color.fromARGB(255, 174, 174, 178);
+
+  Color get grey3 => isDarkMode
+      ? const Color.fromARGB(255, 72, 72, 74)
+      : const Color.fromARGB(255, 199, 199, 204);
+
+  Color get grey4 => isDarkMode
+      ? const Color.fromARGB(255, 58, 58, 60)
+      : const Color.fromARGB(255, 209, 209, 214);
+
+  Color get grey5 => isDarkMode
+      ? const Color.fromARGB(255, 44, 44, 46)
+      : const Color.fromARGB(255, 229, 229, 234);
+
+  Color get grey6 => isDarkMode
+      ? const Color.fromARGB(255, 28, 28, 30)
+      : const Color.fromARGB(255, 242, 242, 247);
+
+  Color get label => isDarkMode
+      ? const Color.fromARGB(255, 255, 255, 255)
+      : const Color.fromARGB(255, 0, 0, 0);
+
+  Color get secondaryLabel => isDarkMode
+      ? const Color(0xff8083A3)
+      : const Color.fromARGB(153, 60, 60, 67);
+
+  Color get tertiaryLabel => isDarkMode
+      ? const Color.fromARGB(153, 235, 235, 245)
+      : const Color.fromARGB(153, 60, 60, 67);
+
+  Color get quaternaryLabel => isDarkMode
+      ? const Color.fromARGB(40, 235, 235, 245)
+      : const Color.fromARGB(45, 60, 60, 67);
+
+  Color get background => isDarkMode
+      ? const Color.fromARGB(255, 0, 0, 0)
+      : const Color.fromARGB(255, 255, 255, 255);
+
+  Color get secondaryBackground => isDarkMode
+      ? const Color.fromARGB(255, 28, 28, 30)
+      : const Color.fromARGB(255, 242, 242, 247);
+
+  Color get tertiaryBackground => isDarkMode
+      ? const Color.fromARGB(255, 44, 44, 46)
+      : const Color.fromARGB(255, 255, 255, 255);
+
+  Color get groupedBackground => isDarkMode
+      ? const Color.fromARGB(255, 44, 44, 46)
+      : const Color.fromARGB(255, 242, 242, 247);
+
+  Color get secondaryGroupedBackground => isDarkMode
+      ? const Color.fromARGB(255, 28, 28, 30)
+      : const Color.fromARGB(255, 255, 255, 255);
+
+  Color get tertiaryGroupedBackground => isDarkMode
+      ? const Color.fromARGB(255, 44, 44, 46)
+      : const Color.fromARGB(255, 242, 242, 247);
+
+  Color get cyan => isDarkMode
+      ? const Color.fromRGBO(100, 210, 255, 1)
+      : const Color.fromRGBO(100, 210, 255, 1);
+
+  Color get mint => isDarkMode
+      ? const Color.fromRGBO(102, 212, 207, 1)
+      : const Color.fromRGBO(0, 199, 190, 1);
+
+  Color get brown => isDarkMode
+      ? const Color.fromRGBO(172, 142, 104, 1)
+      : const Color.fromRGBO(162, 132, 94, 1);
+
+  Color get seperatorColor => isDarkMode
+      ? const Color.fromRGBO(84, 84, 88, 0.6)
+      : const Color.fromRGBO(60, 60, 67, 0.29);
+
+  Color get opaqueSeperatorColor => isDarkMode
+      ? const Color.fromRGBO(56, 56, 58, 1)
+      : const Color.fromRGBO(198, 198, 200, 1);
+
+  Color get placeholderColor => isDarkMode
+      ? const Color.fromRGBO(235, 235, 245, 0.3)
+      : const Color.fromRGBO(60, 60, 67, 0.3);
 }
