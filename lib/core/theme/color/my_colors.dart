@@ -1,8 +1,13 @@
+import 'package:core/core/base/base_singleton.dart';
 import 'package:core/core/enums/theme_enum.dart';
+import 'package:core/main.dart';
 import 'package:flutter/material.dart';
 import 'package:core/core/extensions/theme_extensions.dart';
+import 'package:provider/provider.dart';
 
-class MyColors {
+import '../my_theme.dart';
+
+class MyColors with BaseSingleton {
   static MyColors? _instance;
   static MyColors get instance {
     if (_instance != null) {
@@ -15,7 +20,8 @@ class MyColors {
 
   MyColors.init();
 
-  bool get isDarkMode => ThemeEnum.dark.changeBrightness == Brightness.dark;
+
+  bool get isDarkMode => texts == Brightness.dark;
 
   /// Flutter Colors [You can use all flutter colors basicly].
   // White

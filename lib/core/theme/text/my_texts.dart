@@ -15,7 +15,7 @@ class MyTexts {
   MyTexts.init();
 
   MyColors get _colors => MyColors.instance;
-  Color get _textColor => _colors.black;
+  Color get _textColor => _colors.appleSecondaryBackground;
   String get _fontFamily => 'Roboto';
 
   TextTheme get textTheme => TextTheme(

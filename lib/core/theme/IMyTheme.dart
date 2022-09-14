@@ -3,7 +3,7 @@
 import 'package:core/core/theme/color/my_colors.dart';
 import 'package:core/core/theme/text/my_texts.dart';
 
-abstract class IAppTheme {
+abstract class IMyTheme {
   MyColors get colors => MyColors.instance;
   MyTexts get texts => MyTexts.instance;
 }
