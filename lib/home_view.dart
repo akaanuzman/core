@@ -1,5 +1,5 @@
 import 'package:core/core/base/base_singleton.dart';
-import 'package:core/core/extensions/ui_extensions.dart';
+import 'package:core/core/enums/alert_enum.dart';
 import 'package:flutter/material.dart';
 
 class HomeView extends StatelessWidget with BaseSingleton {
@@ -11,15 +11,15 @@ class HomeView extends StatelessWidget with BaseSingleton {
       appBar: AppBar(),
       body: ElevatedButton(
           onPressed: () {
-            showDialog(
+            uiGlobals.showAlertDialog(
               context: context,
-              builder: (context) => AlertDialog(
-                title: Text("title"),
-                content: Text("content"),
-              ),
+              alertEnum: AlertEnum.ERROR,
+              contentTitle: "contentTitle",
+              contentSubtitle: "contentSubtitle",
+              buttonLabel: "buttonLabel",
             );
           },
-          child: Text("eokfweok")),
+          child: const Text("eokfweok")),
     );
   }
 }

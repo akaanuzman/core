@@ -1,7 +1,7 @@
+import 'package:core/core/enums/alert_enum.dart';
 import 'package:flutter/material.dart';
-
-import '../../main.dart';
-import '../../products/snackbar/special_snackbar.dart';
+import 'package:core/core/extensions/alert_extension.dart';
+import '../../uikit/snackbar/special_snackbar.dart';
 
 class UIGlobals {
   static UIGlobals? _instance;
@@ -29,6 +29,33 @@ class UIGlobals {
         contentColor: contentColor,
         bgColor: bgColor,
       ),
+    );
+  }
+
+  void showAlertDialog({
+    required BuildContext context,
+    required AlertEnum alertEnum,
+    required String contentTitle,
+    required String contentSubtitle,
+    required String buttonLabel,
+    Function()? onTap,
+    bool isHasActions = false,
+    String? secondButtonLabel,
+    Function()? secondActionOnTap,
+  }) {
+    showDialog(
+      context: context,
+      builder: (context) {
+        return alertEnum.getAlert(
+          contentTitle: contentTitle,
+          contentSubtitle: contentSubtitle,
+          buttonLabel: buttonLabel,
+          onTap: onTap,
+          isHasActions: isHasActions,
+          secondButtonLabel: secondButtonLabel,
+          secondActionOnTap: secondActionOnTap,
+        );
+      },
     );
   }
 }
