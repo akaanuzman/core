@@ -1,11 +1,6 @@
 import 'package:core/core/base/base_singleton.dart';
-import 'package:core/core/enums/theme_enum.dart';
-import 'package:core/main.dart';
 import 'package:flutter/material.dart';
-import 'package:core/core/extensions/theme_extensions.dart';
-import 'package:provider/provider.dart';
 
-import '../my_theme.dart';
 
 class MyColors with BaseSingleton {
   static MyColors? _instance;
@@ -21,7 +16,6 @@ class MyColors with BaseSingleton {
   MyColors.init();
 
 
-  bool get isDarkMode => texts == Brightness.dark;
 
   /// Flutter Colors [You can use all flutter colors basicly].
   // White
@@ -374,130 +368,4 @@ class MyColors with BaseSingleton {
   // Transparent
   Color get transparent => Colors.transparent;
 
-  /// Apple Colors
-  /// [You can use Apple Human Interface Guidelines Colors]
-  /// For detailed information: https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/
-  Color get appleRed => isDarkMode
-      ? const Color.fromARGB(255, 255, 69, 58)
-      : const Color.fromARGB(255, 255, 59, 48);
-
-  Color get appleOrange => isDarkMode
-      ? const Color.fromARGB(255, 255, 159, 10)
-      : const Color.fromARGB(255, 255, 149, 0);
-
-  Color get appleYellow => isDarkMode
-      ? const Color.fromARGB(255, 255, 214, 10)
-      : const Color.fromARGB(255, 255, 204, 0);
-
-  Color get appleGreen => isDarkMode
-      ? const Color.fromARGB(255, 48, 209, 88)
-      : const Color.fromARGB(255, 52, 199, 89);
-
-  Color get appleTeal => isDarkMode
-      ? const Color.fromARGB(255, 100, 210, 255)
-      : const Color.fromARGB(255, 90, 200, 250);
-
-  Color get appleBlue => isDarkMode
-      ? const Color.fromARGB(255, 10, 132, 255)
-      : const Color.fromARGB(255, 0, 122, 255);
-
-  Color get appleIndigo => isDarkMode
-      ? const Color.fromARGB(255, 94, 92, 230)
-      : const Color.fromARGB(255, 88, 86, 214);
-
-  Color get applePurple => isDarkMode
-      ? const Color.fromARGB(255, 191, 90, 242)
-      : const Color.fromARGB(255, 175, 82, 222);
-
-  Color get applePink => isDarkMode
-      ? const Color.fromARGB(255, 255, 55, 95)
-      : const Color.fromARGB(255, 255, 45, 85);
-
-  Color get appleGrey => isDarkMode
-      ? const Color.fromARGB(255, 142, 142, 147)
-      : const Color.fromARGB(255, 142, 142, 147);
-
-  Color get appleGrey2 => isDarkMode
-      ? const Color.fromARGB(255, 99, 99, 102)
-      : const Color.fromARGB(255, 174, 174, 178);
-
-  Color get appleGrey3 => isDarkMode
-      ? const Color.fromARGB(255, 72, 72, 74)
-      : const Color.fromARGB(255, 199, 199, 204);
-
-  Color get appleGrey4 => isDarkMode
-      ? const Color.fromARGB(255, 58, 58, 60)
-      : const Color.fromARGB(255, 209, 209, 214);
-
-  Color get appleGrey5 => isDarkMode
-      ? const Color.fromARGB(255, 44, 44, 46)
-      : const Color.fromARGB(255, 229, 229, 234);
-
-  Color get appleGrey6 => isDarkMode
-      ? const Color.fromARGB(255, 28, 28, 30)
-      : const Color.fromARGB(255, 242, 242, 247);
-
-  Color get appleLabel => isDarkMode
-      ? const Color.fromARGB(255, 255, 255, 255)
-      : const Color.fromARGB(255, 0, 0, 0);
-
-  Color get appleSecondaryLabel => isDarkMode
-      ? const Color(0xff8083A3)
-      : const Color.fromARGB(153, 60, 60, 67);
-
-  Color get appleTertiaryLabel => isDarkMode
-      ? const Color.fromARGB(153, 235, 235, 245)
-      : const Color.fromARGB(153, 60, 60, 67);
-
-  Color get appleQuaternaryLabel => isDarkMode
-      ? const Color.fromARGB(40, 235, 235, 245)
-      : const Color.fromARGB(45, 60, 60, 67);
-
-  Color get appleBackground => isDarkMode
-      ? const Color.fromARGB(255, 0, 0, 0)
-      : const Color.fromARGB(255, 255, 255, 255);
-
-  Color get appleSecondaryBackground => isDarkMode
-      ? const Color.fromARGB(255, 28, 28, 30)
-      : const Color.fromARGB(255, 242, 242, 247);
-
-  Color get appleTertiaryBackground => isDarkMode
-      ? const Color.fromARGB(255, 44, 44, 46)
-      : const Color.fromARGB(255, 255, 255, 255);
-
-  Color get appleGroupedBackground => isDarkMode
-      ? const Color.fromARGB(255, 44, 44, 46)
-      : const Color.fromARGB(255, 242, 242, 247);
-
-  Color get appleSecondaryGroupedBackground => isDarkMode
-      ? const Color.fromARGB(255, 28, 28, 30)
-      : const Color.fromARGB(255, 255, 255, 255);
-
-  Color get appleTertiaryGroupedBackground => isDarkMode
-      ? const Color.fromARGB(255, 44, 44, 46)
-      : const Color.fromARGB(255, 242, 242, 247);
-
-  Color get appleCyan => isDarkMode
-      ? const Color.fromRGBO(100, 210, 255, 1)
-      : const Color.fromRGBO(100, 210, 255, 1);
-
-  Color get appleMint => isDarkMode
-      ? const Color.fromRGBO(102, 212, 207, 1)
-      : const Color.fromRGBO(0, 199, 190, 1);
-
-  Color get appleBrown => isDarkMode
-      ? const Color.fromRGBO(172, 142, 104, 1)
-      : const Color.fromRGBO(162, 132, 94, 1);
-
-  Color get appleSeperatorColor => isDarkMode
-      ? const Color.fromRGBO(84, 84, 88, 0.6)
-      : const Color.fromRGBO(60, 60, 67, 0.29);
-
-  Color get appleOpaqueSeperatorColor => isDarkMode
-      ? const Color.fromRGBO(56, 56, 58, 1)
-      : const Color.fromRGBO(198, 198, 200, 1);
-
-  Color get applePlaceholderColor => isDarkMode
-      ? const Color.fromRGBO(235, 235, 245, 0.3)
-      : const Color.fromRGBO(60, 60, 67, 0.3);
 }
