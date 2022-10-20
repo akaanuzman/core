@@ -10,7 +10,10 @@ dependencies:
   flutter:
     sdk: flutter
 
+  # Visual Elements
   cupertino_icons: ^1.0.2
+  animate_do: ^2.1.0
+  shimmer_animation: ^2.1.0+1
 
   # State Management
   provider: ^6.0.3

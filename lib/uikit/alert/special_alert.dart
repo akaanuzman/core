@@ -35,48 +35,8 @@ class SpecialAlert extends StatelessWidget with BaseSingleton {
     return AlertDialog(
       shape: RoundedRectangleBorder(borderRadius: context.borderRadius10x),
       titlePadding: EdgeInsets.zero,
-      title: Container(
-        alignment: Alignment.center,
-        padding: context.padding4x,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.only(
-              topLeft: context.radius10x, topRight: context.radius10x),
-          color: titleBgColor,
-        ),
-        child: SizedBox(
-          width: 100,
-          height: 100,
-          child: CircleAvatar(
-            backgroundColor: circleAvatarBgColor,
-            child: Icon(
-              icon,
-              color: MyColors.instance.white,
-              size: 60,
-            ),
-          ),
-        ),
-      ),
-      content: Padding(
-        padding: context.paddingHorizontal2x,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              contentTitle,
-              style: context.textTheme.subtitle1!.copyWith(
-                fontWeight: FontWeight.w700,
-              ),
-            ),
-            context.emptySizedHeightBox1x,
-            Text(
-              contentSubtitle,
-              style: context.textTheme.subtitle2,
-              textAlign: TextAlign.center,
-            ),
-            context.emptySizedHeightBox1x,
-          ],
-        ),
-      ),
+      title: _title(context),
+      content: _content(context),
       contentPadding: EdgeInsets.only(top: context.val2x),
       actionsAlignment: MainAxisAlignment.center,
       actions: [
@@ -105,19 +65,82 @@ class SpecialAlert extends StatelessWidget with BaseSingleton {
             child: Text(buttonLabel),
           ),
         ] else ...[
-          ElevatedButton(
-            onPressed: onTap ??
-                () {
-                  Navigator.pop(context);
-                },
-            style: ElevatedButton.styleFrom(
-              shape:
-                  RoundedRectangleBorder(borderRadius: context.borderRadius10x),
-            ),
-            child: Text(buttonLabel),
-          ),
+          _onlyOneAction(context),
         ]
       ],
+    );
+  }
+
+  Container _title(BuildContext context) {
+    return Container(
+      alignment: Alignment.center,
+      padding: context.padding4x,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.only(
+            topLeft: context.radius10x, topRight: context.radius10x),
+        color: titleBgColor,
+      ),
+      child: _circleAatarInIcon(),
+    );
+  }
+
+  SizedBox _circleAatarInIcon() {
+    return SizedBox(
+      width: 100,
+      height: 100,
+      child: CircleAvatar(
+        backgroundColor: circleAvatarBgColor,
+        child: Icon(
+          icon,
+          color: MyColors.instance.white,
+          size: 60,
+        ),
+      ),
+    );
+  }
+
+  Padding _content(BuildContext context) {
+    return Padding(
+      padding: context.paddingHorizontal2x,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          _contentTile(context),
+          context.emptySizedHeightBox1x,
+          _contentSubtitle(context),
+          context.emptySizedHeightBox1x,
+        ],
+      ),
+    );
+  }
+
+  Text _contentTile(BuildContext context) {
+    return Text(
+      contentTitle,
+      style: context.textTheme.subtitle1!.copyWith(
+        fontWeight: FontWeight.w700,
+      ),
+    );
+  }
+
+  Text _contentSubtitle(BuildContext context) {
+    return Text(
+      contentSubtitle,
+      style: context.textTheme.subtitle2,
+      textAlign: TextAlign.center,
+    );
+  }
+
+  ElevatedButton _onlyOneAction(BuildContext context) {
+    return ElevatedButton(
+      onPressed: onTap ??
+          () {
+            Navigator.pop(context);
+          },
+      style: ElevatedButton.styleFrom(
+        shape: RoundedRectangleBorder(borderRadius: context.borderRadius10x),
+      ),
+      child: Text(buttonLabel),
     );
   }
 }

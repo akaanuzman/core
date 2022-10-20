@@ -1,6 +1,7 @@
 import 'package:core/core/base/base_singleton.dart';
-import 'package:core/core/enums/alert_enum.dart';
+import 'package:core/uikit/textformfield/special_text_form_field.dart';
 import 'package:flutter/material.dart';
+
 
 class HomeView extends StatelessWidget with BaseSingleton {
   const HomeView({Key? key}) : super(key: key);
@@ -9,17 +10,10 @@ class HomeView extends StatelessWidget with BaseSingleton {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-      body: ElevatedButton(
-          onPressed: () {
-            uiGlobals.showAlertDialog(
-              context: context,
-              alertEnum: AlertEnum.ERROR,
-              contentTitle: "contentTitle",
-              contentSubtitle: "contentSubtitle",
-              buttonLabel: "buttonLabel",
-            );
-          },
-          child: const Text("eokfweok")),
+      body: SpecialTextFormField(
+        context: context,
+        labelText: "labelText",
+      ),
     );
   }
 }

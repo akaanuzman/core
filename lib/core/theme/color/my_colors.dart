@@ -16,6 +16,8 @@ class MyColors with BaseSingleton {
   MyColors.init();
 
 
+  /// Your Colors
+  Color get primaryBoxShadowColor => const Color(0x1a208dfe);
 
   /// Flutter Colors [You can use all flutter colors basicly].
   // White

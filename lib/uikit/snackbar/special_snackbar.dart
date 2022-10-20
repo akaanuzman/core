@@ -21,7 +21,7 @@ class SpecialSnackbar extends SnackBar {
             onPressed: () {},
             textColor: MyColors.instance.white,
           ),
-          duration: context.durationSlow,
+          duration: context.durationSlow1x,
           backgroundColor: bgColor,
           key: key,
         );

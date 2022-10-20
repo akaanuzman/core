@@ -41,11 +41,30 @@ extension MediaQueryExtension on BuildContext {
 }
 
 extension DurationExtension on BuildContext {
-  Duration get durationLow => const Duration(milliseconds: 500);
-  Duration get durationNormal => const Duration(seconds: 1);
-  Duration get durationSlow => const Duration(seconds: 2);
-  Duration get durationXSlow => const Duration(seconds: 3);
-  Duration get durationXXSlow => const Duration(seconds: 5);
+  Duration get durationLow1x => const Duration(milliseconds: 100);
+  Duration get durationLow2x => const Duration(milliseconds: 250);
+  Duration get durationLow3x => const Duration(milliseconds: 500);
+  Duration get durationLow4x => const Duration(milliseconds: 750);
+
+  Duration get durationNormal1x => const Duration(milliseconds: 1000);
+  Duration get durationNormal2x => const Duration(milliseconds: 1250);
+  Duration get durationNormal3x => const Duration(milliseconds: 1500);
+  Duration get durationNormal4x => const Duration(milliseconds: 1750);
+
+  Duration get durationSlow1x => const Duration(milliseconds: 2000);
+  Duration get durationSlow2x => const Duration(milliseconds: 2250);
+  Duration get durationSlow3x => const Duration(milliseconds: 2500);
+  Duration get durationSlow4x => const Duration(milliseconds: 2750);
+
+  Duration get durationVerySlow1x => const Duration(milliseconds: 3000);
+  Duration get durationVerySlow2x => const Duration(milliseconds: 3250);
+  Duration get durationVerySlow3x => const Duration(milliseconds: 3500);
+  Duration get durationVerySlow4x => const Duration(milliseconds: 3750);
+
+  Duration get durationTooSlow1x => const Duration(milliseconds: 4000);
+  Duration get durationTooSlow2x => const Duration(milliseconds: 4250);
+  Duration get durationTooSlow3x => const Duration(milliseconds: 4500);
+  Duration get durationTooSlow4x => const Duration(milliseconds: 4750);
 }
 
 extension PaddingExtension on BuildContext {
@@ -191,6 +210,46 @@ extension BorderExtension on BuildContext {
       BorderRadius.vertical(bottom: radius14x);
   BorderRadius get borderRadiusBottom15x =>
       BorderRadius.vertical(bottom: radius15x);
+}
+
+extension FontExtension on BuildContext {
+  // Fontweights
+  FontWeight get fw100 => FontWeight.w100;
+  FontWeight get fw200 => FontWeight.w200;
+  FontWeight get fw300 => FontWeight.w300;
+  FontWeight get fw400 => FontWeight.w400;
+  FontWeight get fw500 => FontWeight.w500;
+  FontWeight get fw600 => FontWeight.w600;
+  FontWeight get fw700 => FontWeight.w700;
+  FontWeight get fw800 => FontWeight.w800;
+  FontWeight get fw900 => FontWeight.w900;
+  FontWeight get fwBold => FontWeight.bold;
+  FontWeight get fwNormal => FontWeight.normal;
+
+  // TextAligns
+  TextAlign get taStart => TextAlign.start;
+  TextAlign get taCenter => TextAlign.center;
+  TextAlign get taEnd => TextAlign.end;
+  TextAlign get taLeft => TextAlign.left;
+  TextAlign get taRight => TextAlign.right;
+  TextAlign get taJustify => TextAlign.justify;
+}
+
+extension AlignmentExtension on BuildContext {
+  // Main Axis
+  MainAxisAlignment get mainAxisAStart => MainAxisAlignment.start;
+  MainAxisAlignment get mainAxisACenter => MainAxisAlignment.center;
+  MainAxisAlignment get mainAxisAEnd => MainAxisAlignment.end;
+  MainAxisAlignment get mainAxisASpaceAround => MainAxisAlignment.spaceAround;
+  MainAxisAlignment get mainAxisASpaceBetween => MainAxisAlignment.spaceBetween;
+  MainAxisAlignment get mainAxisASpaceEvenly => MainAxisAlignment.spaceEvenly;
+
+  // Cross Axis
+  CrossAxisAlignment get crossAxisAStart => CrossAxisAlignment.start;
+  CrossAxisAlignment get crossAxisACenter => CrossAxisAlignment.center;
+  CrossAxisAlignment get crossAxisAEnd => CrossAxisAlignment.end;
+  CrossAxisAlignment get crossAxisAStretch => CrossAxisAlignment.stretch;
+  CrossAxisAlignment get crossAxisABaseline => CrossAxisAlignment.baseline;
 }
 
 // Sized Boxes
